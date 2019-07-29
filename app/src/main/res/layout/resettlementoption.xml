@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+   android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/parentLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Resettlement Option"
+                android:textSize="20dp"
+                android:padding="5dp"
+
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="5.1	Preference for type of compensation for affected land legally owned by your household. Choose only one"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/affectedLand"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:category="@string/selectable"
+                    app:choices="[1] Cash at replacement cost ,[2] Replacement land (same size or productivity) "
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="5.2	Preference for type of compensation for affected house and structures.Choose only one"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/affectedCompensation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:padding="5dp"
+                    app:category="@string/selectable"
+                    app:choices="[1] Cash at replacement cost ,[2] in-kind (material and help to build)"
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="5.3	Preference for type of compensation or loss of crops, trees, etc.Choose only one"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/lossOfCrops"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    app:category="@string/selectable"
+                    app:choices="[1] Cash at market value ,[2] Combination of seedlings and cash "
+                    android:editable="false"
+                    app:tittle="Options"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.4	Rating of importance of factors/criteria for selection of resettlement site. Only for eligiblehouseholds."
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/eligiblehouseholds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    app:category="@string/selectable"
+                    app:choices="[1] Most important ,[2] Important ,[3] Less important "
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.4.1	Close proximity and close to existing Commune"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/proximity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    app:category="@string/selectable"
+                    app:choices="[1] Most important ,[2] Important ,[3] Less important "
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.4.2	A site within the same district "
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/district"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    app:category="@string/selectable"
+                    app:choices="[1] Most important ,[2] Important ,[3] Less important "
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.4.3	A site in another district but in the same province "
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/sameprovince"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    app:category="@string/selectable"
+                    app:choices="[1] Most important ,[2] Important ,[3] Less important "
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.4.4	An area with access to schools and health center	"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/accesstoSchools"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/gray"
+                    app:category="@string/selectable"
+                    app:choices="[1] Most important ,[2] Important ,[3] Less important "
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.4.5	An area near a market"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/market"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    app:category="@string/selectable"
+                    app:choices="[1] Most important ,[2] Important ,[3] Less important "
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="5.4.6	An area	"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    app:category="@string/selectable"
+                    app:choices="[1] Most important ,[2] Important ,[3] Less important "
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.4.7	An area near to a pagoda"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/pagoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    app:category="@string/selectable"
+                    app:choices="[1] Most important ,[2] Important ,[3] Less important "
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.4.8	Accepted by host community"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/community"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    app:category="@string/selectable"
+                    app:choices="[1] Most important ,[2] Important ,[3] Less important "
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.5  Preference. Answer Y or N"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="5.5.1	Group relocation to new sit under the project "
+                android:textSize="18dp"
+                android:textStyle="" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/groupRelocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    app:category="@string/selectable"
+                    app:choices="Yes,No"
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.5.2	Individual relocation on land available nearby "
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/individualRelocation"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:category="@string/selectable"
+                    app:choices="Yes,No"
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="5.5.3	Self relocation "
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/selfRelocation"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    app:category="@string/selectable"
+                    android:editable="false"
+                    app:choices="Yes,No"
+                    app:tittle="Options"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:padding="12dp"
+                android:text="SUBMIT"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

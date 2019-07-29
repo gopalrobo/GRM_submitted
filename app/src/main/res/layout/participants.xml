@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+   android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/parentLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Participants "
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Household Head/Respondent Name: "
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/householdHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:padding="5dp"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Signature/Thump Print"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/signature"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/gray"
+                    app:category="@string/date"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Witness Name: (Village or Community Representative)"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/witnessName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Signature/Thump Print"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/witnessSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Date"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/witnessDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    app:category="@string/date"
+                    android:backgroundTint="@color/gray"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Survey Team Member Name: "
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/surveyNameOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Signature/Thump Print"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/surveySignatureOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Date"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/surveyDateOne"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:category="@string/date"
+                    android:backgroundTint="@color/gray"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Survey Team Member Name:"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/surveyNameTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:padding="5dp"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Signature/Thump Print "
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/surveySignatureTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:padding="5dp"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/surveyDateTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    app:category="@string/date"
+                    android:backgroundTint="@color/gray"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Survey Team Member Name"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/surveyNameThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:padding="5dp"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signature/Thump Print "
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/surveySignatureThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Date"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/surveyDateThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:category="@string/date"
+                    android:backgroundTint="@color/gray"
+                    android:padding="5dp"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:padding="12dp"
+                android:text="SUBMIT"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

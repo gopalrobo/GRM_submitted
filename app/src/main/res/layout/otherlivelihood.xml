@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+   android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/parentLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. OtherLivelihood Impact"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.1	Any other business or livelihood activities of your household affected by the project (Y or N)"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If no, then no need to answer questions in this section "
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/otherLivelihood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/gray"
+                    app:category="@string/selectable"
+                    app:choices="Yes,No"
+                    app:tittle="Options"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 4.2	If Yes, type of business or livelihood activities. Answer (Y or N)"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.2.1	Shop, Kiosk or stall(vegetables, fruit, grocery/household items etc.)"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/businessShop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/gray"
+                    app:category="@string/selectable"
+                    app:choices="Yes,No"
+                    app:tittle="Options"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 4.2.2 Food preparation or selling "
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/businessFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/gray"
+                    app:category="@string/selectable"
+                    app:choices="Yes,No"
+                    app:tittle="Options"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.2.3	Mechanic or repair shop"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/businessMechanic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/gray"
+                    app:category="@string/selectable"
+                    app:choices="Yes,No"
+                    app:tittle="Options"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.2.4	Café, restaurant, beer shops "
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/businessCafé"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    app:category="@string/selectable"
+                    app:choices="Yes,No"
+                    app:tittle="Options"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.2.5	Other, Specify 	"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/businessOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.3 Number of members (by gender) in household involved in business or livelihood activities"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:textStyle="" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.3.1	Male"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/membersMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.3.2	Female"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/membersFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.4 Average monthly earnings (Riel) from business or livelihood activity"
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/earnings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5 Business registered. Answer Y or N "
+                android:padding="5dp"
+                android:textSize="18dp"
+                android:textStyle="" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1">
+
+                <com.example.arthi.dmssmartapp.CustomFontEditText
+                    android:id="@+id/businessRegistered"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    app:category="@string/selectable"
+                    app:choices="Yes,No"
+                    app:tittle="Options"
+                    android:editable="false"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="18dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:padding="12dp"
+                android:text="SUBMIT"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

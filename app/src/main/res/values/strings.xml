@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Smart DMS</string>
+    <string name="select">Select</string>
+    <string name="enter">Enter</string>
+    <string name="selectable">selectable</string>
+    <string name="multiSselectable">multi selectable</string>
+    <string name="date">date</string>
+
+</resources>

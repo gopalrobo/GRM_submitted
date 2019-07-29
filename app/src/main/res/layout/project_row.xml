@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLinear">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:maxLines="1"
+                android:text="Area of land affected by the project (by type) owned/used by your household?"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/secondaryTextColor" />
+
+            <TextView
+                android:id="@+id/typesOfProject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/primaryTextColor" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+               android:textSize="15dp"
+                android:padding="5dp"
+                android:maxLines="1"
+                android:text="A. Area in hectares (ha)"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/secondaryTextColor" />
+
+            <TextView
+                android:id="@+id/projectAreaaA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/primaryTextColor" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:ellipsize="end"
+               android:textSize="15dp"
+                android:maxLines="1"
+                android:text="B. Area in hectares (ha) "
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/secondaryTextColor" />
+
+            <TextView
+                android:id="@+id/projectAreaB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/primaryTextColor" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
