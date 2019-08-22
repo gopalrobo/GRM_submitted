@@ -46,7 +46,7 @@
                     app:category="@string/selectable"
                     app:choices="Yes,No"
                     app:tittle="Options"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -310,7 +310,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -335,7 +335,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -360,7 +360,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -385,7 +385,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -410,7 +410,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -435,7 +435,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -517,7 +517,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -542,7 +542,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -567,7 +567,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -592,7 +592,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -617,7 +617,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -642,7 +642,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -720,7 +720,7 @@
                     app:category="@string/selectable"
                     app:choices="Yes,No"
                     app:tittle="Options"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -748,7 +748,7 @@
                     app:category="@string/selectable"
                     app:choices="Yes,No"
                     app:tittle="Options"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -776,7 +776,7 @@
                     app:category="@string/selectable"
                     app:choices="[1] Simple (hatch/sack, bamboo, clay/earth),[2] Timber with Tin Roof ,[3] Wood and brick,[4] Brick and concrete,[5] Temporary/Unstable"
                     app:tittle="Options"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 

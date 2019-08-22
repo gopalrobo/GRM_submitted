@@ -40,7 +40,8 @@
                 android:maxLines="1"
                 android:text=""
                 android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textColor="@color/primaryTextColor" />
+                android:textColor="@color/primaryTextColor"
+                />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"

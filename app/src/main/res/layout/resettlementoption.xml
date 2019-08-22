@@ -26,7 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="5.1	Preference for type of compensation for affected land legally owned by your household. Choose only one"
+                android:text="5.1 Preference for type of compensation for affected land legally owned by your household. Choose only one"
                 android:textSize="18dp"
                 android:textStyle="" />
 
@@ -48,7 +48,7 @@
                     app:tittle="Options"
                     android:editable="false"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -57,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="5.2	Preference for type of compensation for affected house and structures.Choose only one"
+                android:text="5.2 Preference for type of compensation for affected house and structures.Choose only one"
                 android:textSize="18dp"
                 android:textStyle="" />
 
@@ -79,7 +79,7 @@
                     app:choices="[1] Cash at replacement cost ,[2] in-kind (material and help to build)"
                     app:tittle="Options"
                     android:editable="false"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -88,7 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="5.3	Preference for type of compensation or loss of crops, trees, etc.Choose only one"
+                android:text="5.3 Preference for type of compensation or loss of crops, trees, etc.Choose only one"
                 android:textSize="18dp"
                 android:textStyle="" />
 
@@ -110,7 +110,7 @@
                     app:choices="[1] Cash at market value ,[2] Combination of seedlings and cash "
                     android:editable="false"
                     app:tittle="Options"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -141,7 +141,7 @@
                     app:tittle="Options"
                     android:editable="false"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -172,7 +172,7 @@
                     app:tittle="Options"
                     android:editable="false"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -203,7 +203,7 @@
                     app:tittle="Options"
                     android:editable="false"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -234,7 +234,7 @@
                     app:tittle="Options"
                     android:editable="false"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -265,7 +265,7 @@
                     app:choices="[1] Most important ,[2] Important ,[3] Less important "
                     app:tittle="Options"
                     android:editable="false"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -296,7 +296,7 @@
                     app:choices="[1] Most important ,[2] Important ,[3] Less important "
                     app:tittle="Options"
                     android:editable="false"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -327,7 +327,7 @@
                     app:tittle="Options"
                     android:editable="false"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -358,7 +358,7 @@
                     app:tittle="Options"
                     android:editable="false"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -389,7 +389,7 @@
                     app:tittle="Options"
                     android:editable="false"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -427,7 +427,7 @@
                     app:tittle="Options"
                     android:editable="false"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -458,7 +458,7 @@
                     app:tittle="Options"
                     android:editable="false"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -489,7 +489,7 @@
                     android:editable="false"
                     app:choices="Yes,No"
                     app:tittle="Options"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 

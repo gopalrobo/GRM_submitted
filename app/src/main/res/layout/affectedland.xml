@@ -216,7 +216,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     app:category="@string/selectable"
                     app:choices="[1] Have land use right certificate or other legal title documents ,[2] State land ,[3] No legal right or title for use-illegal occupation,[4] Traditional/customary land use,[5] Lease or rent "
                     app:tittle="Options"
@@ -438,7 +438,7 @@
                     app:category="@string/selectable"
                     app:choices="Yes,No"
                     app:tittle="Options"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 

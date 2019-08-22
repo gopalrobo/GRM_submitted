@@ -17,7 +17,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Participants "
+                android:text="Participants"
                 android:textSize="20dp"
                 android:padding="5dp"
                 android:layout_gravity="center"
@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1">
 
                 <EditText
@@ -54,34 +54,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
+                android:layout_marginTop="5dp"
                 android:text="Signature/Thump Print"
                 android:textSize="18dp"
                 android:textStyle="" />
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
+            <FrameLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1">
+                android:layout_marginTop="5dp"
+                >
 
-                <EditText
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/signature"
-                    android:padding="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="70dp"
+                    android:layout_height="70.0dip"
                     android:layout_gravity="center"
-                    android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
-                    android:textColorHint="#c6c6c6"
-                    android:textSize="18dp" />
+                    android:background="@color/white"
+                    android:src="@drawable/file"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
 
-            </android.support.design.widget.TextInputLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cancelsign"
+                    android:layout_width="21dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/cancel"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp" />
+
+            </FrameLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:padding="5dp"
                 android:layout_height="wrap_content"
                 android:text="Date"
+                android:layout_marginTop="5dp"
                 android:textSize="18dp"
                 android:textStyle="" />
 
@@ -89,7 +99,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1">
 
                 <com.example.arthi.dmssmartapp.CustomFontEditText
@@ -100,6 +110,8 @@
                     android:padding="5dp"
                     android:backgroundTint="@color/gray"
                     app:category="@string/date"
+                    android:inputType="none"
+                    android:editable="false"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -108,6 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
+                android:layout_marginTop="5dp"
                 android:text="Witness Name: (Village or Community Representative)"
                 android:textSize="18dp"
                 android:textStyle="" />
@@ -116,7 +129,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1">
 
                 <EditText
@@ -135,34 +148,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
+                android:layout_marginTop="5dp"
                 android:text="Signature/Thump Print"
                 android:textSize="18dp"
                 android:textStyle="" />
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
+            <FrameLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1">
+                android:layout_marginTop="5dp"
+                >
 
-                <EditText
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/witnessSignature"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70.0dip"
                     android:layout_gravity="center"
-                    android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
-                    android:textColorHint="#c6c6c6"
-                    android:textSize="18dp" />
+                    android:background="@color/white"
+                    android:src="@drawable/file"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
 
-            </android.support.design.widget.TextInputLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cancelwitnessSignature"
+                    android:layout_width="21dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/cancel"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp" />
+
+            </FrameLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="Date"
+                android:layout_marginTop="5dp"
                 android:textSize="18dp"
                 android:textStyle="" />
 
@@ -170,7 +193,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
+               android:layout_marginTop="5dp"
                 android:layout_weight="1">
 
                 <com.example.arthi.dmssmartapp.CustomFontEditText
@@ -182,6 +205,8 @@
                     app:category="@string/date"
                     android:backgroundTint="@color/gray"
                     android:textColorHint="#c6c6c6"
+                    android:inputType="none"
+                    android:editable="false"
                     android:textSize="18dp" />
 
             </android.support.design.widget.TextInputLayout>
@@ -190,6 +215,7 @@
                 android:layout_height="wrap_content"
                 android:text="Survey Team Member Name: "
                 android:padding="5dp"
+                android:layout_marginTop="5dp"
                 android:textSize="18dp"
                 android:textStyle="" />
 
@@ -197,7 +223,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
+               android:layout_marginTop="5dp"
                 android:layout_weight="1">
 
                 <EditText
@@ -218,40 +244,50 @@
                 android:padding="5dp"
                 android:text="Signature/Thump Print"
                 android:textSize="18dp"
+                android:layout_marginTop="5dp"
                 android:textStyle="" />
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
+            <FrameLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1">
+                android:layout_marginTop="5dp"
+                >
 
-                <EditText
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/surveySignatureOne"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70.0dip"
                     android:layout_gravity="center"
-                    android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
-                    android:textColorHint="#c6c6c6"
-                    android:textSize="18dp" />
+                    android:background="@color/white"
+                    android:src="@drawable/file"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
 
-            </android.support.design.widget.TextInputLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cancelsurveySignatureOne"
+                    android:layout_width="21dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/cancel"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp" />
+
+            </FrameLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="Date"
                 android:textSize="18dp"
+                android:layout_marginTop="5dp"
                 android:textStyle="" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1">
 
                 <com.example.arthi.dmssmartapp.CustomFontEditText
@@ -262,6 +298,8 @@
                     android:layout_gravity="center"
                     app:category="@string/date"
                     android:backgroundTint="@color/gray"
+                    android:editable="false"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
 
@@ -270,6 +308,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
+                android:layout_marginTop="5dp"
                 android:text="Survey Team Member Name:"
                 android:textSize="18dp"
                 android:textStyle="" />
@@ -278,7 +317,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1">
 
                 <EditText
@@ -297,34 +336,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
+                android:layout_marginTop="5dp"
                 android:text="Signature/Thump Print "
                 android:textSize="18dp"
                 android:textStyle="" />
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
+            <FrameLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1">
+                android:layout_marginTop="5dp"
+                >
 
-                <EditText
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/surveySignatureTwo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="70dp"
+                    android:layout_height="70.0dip"
                     android:layout_gravity="center"
-                    android:backgroundTint="@color/gray"
-                    android:padding="5dp"
-                    android:inputType="textCapWords"
-                    android:textColorHint="#c6c6c6"
-                    android:textSize="18dp" />
+                    android:background="@color/white"
+                    android:src="@drawable/file"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
 
-            </android.support.design.widget.TextInputLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cancelsurveySignatureTwo"
+                    android:layout_width="21dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/cancel"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp" />
+
+            </FrameLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Date"
                 android:padding="5dp"
+                android:layout_marginTop="5dp"
                 android:textSize="18dp"
                 android:textStyle="" />
 
@@ -332,7 +381,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1">
 
                 <com.example.arthi.dmssmartapp.CustomFontEditText
@@ -342,6 +391,8 @@
                     android:padding="5dp"
                     android:layout_gravity="center"
                     app:category="@string/date"
+                    android:inputType="none"
+                    android:editable="false"
                     android:backgroundTint="@color/gray"
                     android:textColorHint="#c6c6c6"
                     android:textSize="18dp" />
@@ -352,6 +403,7 @@
                 android:layout_height="wrap_content"
                 android:text="Survey Team Member Name"
                 android:padding="5dp"
+                android:layout_marginTop="5dp"
                 android:textSize="18dp"
                 android:textStyle="" />
 
@@ -359,7 +411,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1">
 
                 <EditText
@@ -379,33 +431,43 @@
                 android:layout_height="wrap_content"
                 android:text="Signature/Thump Print "
                 android:padding="5dp"
+                android:layout_marginTop="5dp"
                 android:textSize="18dp"
                 android:textStyle="" />
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
+            <FrameLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1">
+                android:layout_marginTop="5dp"
+                >
 
-                <EditText
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/surveySignatureThree"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="70dp"
+                    android:layout_height="70.0dip"
                     android:layout_gravity="center"
-                    android:padding="5dp"
-                    android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
-                    android:textColorHint="#c6c6c6"
-                    android:textSize="18dp" />
+                    android:background="@color/white"
+                    android:src="@drawable/file"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="2dp" />
 
-            </android.support.design.widget.TextInputLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cancelsurveySignatureThree"
+                    android:layout_width="21dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/cancel"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="3dp" />
+
+            </FrameLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="Date"
+                android:layout_marginTop="5dp"
                 android:textSize="18dp"
                 android:textStyle="" />
 
@@ -413,7 +475,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
                 android:layout_weight="1">
 
                 <com.example.arthi.dmssmartapp.CustomFontEditText
@@ -422,6 +484,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     app:category="@string/date"
+                    android:inputType="none"
+                    android:editable="false"
                     android:backgroundTint="@color/gray"
                     android:padding="5dp"
                     android:textColorHint="#c6c6c6"

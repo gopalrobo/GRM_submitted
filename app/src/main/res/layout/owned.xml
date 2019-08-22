@@ -35,7 +35,7 @@
                     app:choices="2.4.1 Residential,2.4.2 Agricultural,2.4.3 Commercial,2.4.4 Other land "
                     app:tittle="Options"
                     android:padding="5dp"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="15dp" />
 
@@ -61,7 +61,7 @@
                     android:layout_gravity="center"
                     android:padding="5dp"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="15dp" />
 
@@ -87,7 +87,7 @@
                     android:layout_gravity="center"
                     android:padding="5dp"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="15dp" />
 

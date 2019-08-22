@@ -34,7 +34,7 @@
                     app:category="@string/selectable"
                     app:choices="Rice,Other Crops Specify,Vegetable Garden,Fruit Trees. Specify"
                     app:tittle="Options"
-                    android:inputType="textCapWords"
+                    android:inputType="none"
                     android:textColorHint="#c6c6c6"
                     android:textSize="15dp" />
 
@@ -59,7 +59,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="15dp" />
 
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:backgroundTint="@color/gray"
-                    android:inputType="textCapWords"
+                    android:inputType="numberDecimal"
                     android:textColorHint="#c6c6c6"
                     android:textSize="15dp" />
 
