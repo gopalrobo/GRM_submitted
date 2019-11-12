@@ -17,7 +17,6 @@ public class FiveResettlement extends AppCompatActivity {
     EditText affectedLand;
     EditText affectedCompensation;
     EditText lossOfCrops;
-    EditText eligiblehouseholds;
     EditText proximity;
     EditText district;
     EditText sameprovince;
@@ -45,7 +44,6 @@ public class FiveResettlement extends AppCompatActivity {
         affectedLand = (EditText) findViewById(R.id.affectedLand);
         affectedCompensation = (EditText) findViewById(R.id.affectedCompensation);
         lossOfCrops = (EditText) findViewById(R.id.lossOfCrops);
-        eligiblehouseholds = (EditText) findViewById(R.id.eligiblehouseholds);
         proximity = (EditText) findViewById(R.id.proximity);
         district = (EditText) findViewById(R.id.district);
         sameprovince = (EditText) findViewById(R.id.sameprovince);
@@ -68,7 +66,7 @@ public class FiveResettlement extends AppCompatActivity {
                         affectedLand.getText().toString(),
                         affectedCompensation.getText().toString(),
                         lossOfCrops.getText().toString(),
-                        eligiblehouseholds.getText().toString(),
+                       "",
                         proximity.getText().toString(),
                         district.getText().toString(),
                         sameprovince.getText().toString(),
@@ -102,7 +100,6 @@ public class FiveResettlement extends AppCompatActivity {
                 affectedLand.setText(resettlementOption.affectedLand);
                 affectedCompensation.setText(resettlementOption.affectedCompensation);
                 lossOfCrops.setText(resettlementOption.lossOfCrops);
-                eligiblehouseholds.setText(resettlementOption.eligiblehouseholds);
                 proximity.setText(resettlementOption.proximity);
                 district.setText(resettlementOption.district);
                 sameprovince.setText(resettlementOption.sameprovince);

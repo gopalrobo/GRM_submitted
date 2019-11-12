@@ -61,8 +61,6 @@ public class HouseholdDate implements Serializable {
 
  public String fmailyLiving;
 
- public ArrayList<Male> males;
- public ArrayList<Female> females;
 
     public HouseholdDate(String householdHead, String gender, String age, String maritalStatus, String education, String ethnicGroup,
 
@@ -76,7 +74,7 @@ public class HouseholdDate implements Serializable {
                          String poultry, String forestProducts, String handicrafts, String estimateOthers,
                          String house, String roof, String walls, String floor, String disabledMale,
                          String disabledFemale, String disabledillness, String fmailyLiving,
-                         ArrayList<Male> males, ArrayList<Female> females) {
+                         ArrayList<String> males, ArrayList<String> females) {
         this.householdHead = householdHead;
         this.gender = gender;
         this.age = age;
@@ -126,8 +124,7 @@ public class HouseholdDate implements Serializable {
         this.disabledFemale = disabledFemale;
         this.disabledillness = disabledillness;
         this.fmailyLiving = fmailyLiving;
-        this.males = males;
-        this.females = females;
+
     }
 
     public String getHouseholdHead() {
@@ -522,19 +519,5 @@ public class HouseholdDate implements Serializable {
         this.fmailyLiving = fmailyLiving;
     }
 
-    public ArrayList<Male> getMales() {
-        return males;
-    }
 
-    public void setMales(ArrayList<Male> males) {
-        this.males = males;
-    }
-
-    public ArrayList<Female> getFemales() {
-        return females;
-    }
-
-    public void setFemales(ArrayList<Female> females) {
-        this.females = females;
-    }
 }

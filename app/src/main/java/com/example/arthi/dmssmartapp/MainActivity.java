@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     CardView affectedStructure;
     CardView affectedLand;
     CardView participants;
-    CardView questionnaire;
+    CardView questionnaire,singlePageSurvey;
     CardView otherLivelihood;
     CardView resettlementOption;
 
@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         affectedLand = (CardView) findViewById(R.id.affectedLand);
         participants = (CardView) findViewById(R.id.participants);
         questionnaire = (CardView) findViewById(R.id.questionnaire);
+        singlePageSurvey = (CardView) findViewById(R.id.singlePageSurvey);
         otherLivelihood = (CardView) findViewById(R.id.otherLivelihood);
         resettlementOption = (CardView) findViewById(R.id.resettlementOption);
 
@@ -126,6 +127,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, OneHousehold.class);
                 //step 1
+                if(mainbean!=null&&mainbean.getHouseholdDate()!=null) {
+                    intent.putExtra("data", mainbean.householdDate);
+                }
                 startActivityForResult(intent, 1);
             }
         });
@@ -134,23 +138,31 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,TwoLand .class);
                 //step 1
-                startActivityForResult(intent, 2);
+                if(mainbean!=null&&mainbean.getAffectedLand()!=null) {
+                    intent.putExtra("data", mainbean.affectedLand);
+                }    startActivityForResult(intent, 2);
             }
         });
+
         affectedStructure.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ThreeStructure.class);
                 //step 1
-                startActivityForResult(intent, 3);
+                if(mainbean!=null&&mainbean.getAffectedStructure()!=null) {
+                    intent.putExtra("data", mainbean.affectedStructure);
+                }  startActivityForResult(intent, 3);
             }
         });
+
         otherLivelihood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, FourImpact.class);
                 //step 1
-                startActivityForResult(intent, 4);
+                if(mainbean!=null&&mainbean.getOtherLivelihood()!=null) {
+                    intent.putExtra("data", mainbean.otherLivelihood);
+                } startActivityForResult(intent, 4);
             }
         });
         resettlementOption.setOnClickListener(new View.OnClickListener() {
@@ -158,15 +170,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, FiveResettlement.class);
                 //step 1
-                startActivityForResult(intent, 5);
+                if(mainbean!=null&&mainbean.getResettlementOption()!=null) {
+                    intent.putExtra("data", mainbean.resettlementOption);
+                } startActivityForResult(intent, 5);
             }
         });
+
         participants.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SixParticipants.class);
                 //step 1
-                startActivityForResult(intent, 6);
+                if(mainbean!=null&&mainbean.getParticipants()!=null) {
+                    intent.putExtra("data", mainbean.participants);
+                }  startActivityForResult(intent, 6);
             }
         });
         questionnaire.setOnClickListener(new View.OnClickListener() {
@@ -174,6 +191,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SevenQuestionnaire.class);
                 //step 1
+                if(mainbean!=null&&mainbean.getQuestionnaire()!=null) {
+                    intent.putExtra("data", mainbean.questionnaire);
+                } startActivityForResult(intent, 7);
+            }
+        });
+
+        singlePageSurvey.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SinglePageSurvey.class);
                 startActivityForResult(intent, 7);
             }
         });
