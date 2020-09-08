@@ -1,0 +1,3866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_margin="5dp"
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold"
+                android:text="@string/summary"
+                />
+
+            <LinearLayout
+                android:id="@+id/projectDetailLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/projectDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="42285-013-Integrated Urban Environmental Management in the Tonle Sap Basin"
+                    android:textColor="#000"
+                    android:layout_weight="0.5"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/sans" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:text="@string/monthkh"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:text="@string/reporting"
+                    android:gravity="center_vertical"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:background="#fff"
+                    android:padding="1dp"
+                    android:text="@string/solved"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/complaintSubmit"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/total"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/jan"
+
+                    />
+
+                <EditText
+                    android:id="@+id/jancomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/jangovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textAlignment="center"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/jancourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:inputType="number"
+                    android:padding="1dp"
+                    android:textAlignment="center"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp" />
+
+
+
+
+
+                <EditText
+                    android:id="@+id/jantotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/feb"
+
+                    />
+                <EditText
+                    android:id="@+id/febcomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/febgovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/febcourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/febtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="#fff"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:padding="1dp"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/mar"
+
+                    />
+                <EditText
+                    android:id="@+id/marcomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/margovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/marcourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/martotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="@string/apr" />
+
+                <EditText
+                    android:id="@+id/aprcomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:background="#fff"
+                    android:inputType="none"
+                    android:padding="1dp"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp" />
+
+
+                <EditText
+                    android:id="@+id/aprgovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:background="#fff"
+                    android:inputType="none"
+                    android:padding="1dp"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp" />
+
+
+                <EditText
+                    android:id="@+id/aprcourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:padding="1dp"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp" />
+
+
+                <EditText
+                    android:id="@+id/aprtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="#fff"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:padding="1dp"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/may"
+                    />
+
+                <EditText
+                    android:id="@+id/maycomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:padding="1dp"
+                    android:textAlignment="center"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp" />
+
+
+
+                <EditText
+                    android:id="@+id/maygovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+
+                <EditText
+                    android:id="@+id/maycourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/maytotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/jun"
+                    />
+
+                <EditText
+                    android:id="@+id/juncomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/jungovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/juncourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/juntotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/jul"
+
+                    />
+
+                <EditText
+                    android:id="@+id/julcomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/julgovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/julcourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/jultotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/aug"
+
+                    />
+
+                <EditText
+                    android:id="@+id/augcomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/auggovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/augcourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/augtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/sep"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/sepcomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/sepgovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/sepcourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/septotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/oct"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/octcomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/octgovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/octcourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/octtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/nov"
+
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/novcomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/novgovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/novcourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/novtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/dec"
+                    />
+
+                <EditText
+                    android:id="@+id/deccomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/decgovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/deccourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/dectotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/subtotal"
+                    android:layout_marginBottom="@dimen/border"
+
+                    />
+
+                <EditText
+                    android:id="@+id/subcomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:editable="false"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_marginBottom="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/subgovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_marginBottom="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/subcourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_marginBottom="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/subtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:editable="false"
+                    android:textAlignment="center"
+                    android:inputType="none"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_marginBottom="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                android:text="2)  Theme 2 "
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:text="@string/monthkh"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:text="@string/reporting"
+                    android:gravity="center_vertical"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:background="#fff"
+                    android:padding="1dp"
+                    android:text="@string/solved"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/complaintSubmit"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/total"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/jan"
+
+                    />
+
+                <EditText
+                    android:id="@+id/jancomplaint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/jangovernment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/jancourt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+
+                <EditText
+                    android:id="@+id/jantotal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/feb"
+
+                    />
+                <EditText
+                    android:id="@+id/febcomplaint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/febgovernment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/febcourt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/febtotal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/mar"
+
+                    />
+                <EditText
+                    android:id="@+id/marcomplaint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/margovernment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/marcourt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/martotal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/apr"
+                    />
+
+                <EditText
+                    android:id="@+id/aprcomplaint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/aprgovernment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/aprcourt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/aprtotal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/may"
+                    />
+
+                <EditText
+                    android:id="@+id/maycomplaint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/maygovernment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+
+                <EditText
+                    android:id="@+id/maycourt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/maytotal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/jun"
+                    />
+
+                <EditText
+                    android:id="@+id/juncomplaint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/jungovernment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/juncourt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/juntotal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/jul"
+
+                    />
+
+                <EditText
+                    android:id="@+id/julcomplaint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/julgovernment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/julcourt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/jultotal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/aug"
+
+                    />
+
+                <EditText
+                    android:id="@+id/augcomplaint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/auggovernment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/augcourt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/augtotal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/sep"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/sepcomplaint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/sepgovernment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/sepcourt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/septotal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/oct"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/octcomplaint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/octgovernment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/octcourt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/octtotal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/nov"
+
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/novcomplaint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/novgovernment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/novcourt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/novtotal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/dec"
+                    />
+
+                <EditText
+                    android:id="@+id/deccomplaint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/decgovernment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/deccourt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/dectotal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/subtotal"
+                    android:layout_marginBottom="@dimen/border"
+
+                    />
+
+                <EditText
+                    android:id="@+id/subcomplaint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_marginBottom="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/subgovernment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_marginBottom="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/subcourt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_marginBottom="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/subtotal1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_marginBottom="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="3)  Theme 3   "
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:text="@string/monthkh"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:text="@string/reporting"
+                    android:gravity="center_vertical"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:background="#fff"
+                    android:padding="1dp"
+                    android:text="@string/solved"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/complaintSubmit"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/total"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/jan"
+
+                    />
+
+                <EditText
+                    android:id="@+id/jancomplaint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/jangovernment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/jancourt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+
+                <EditText
+                    android:id="@+id/jantotal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/feb"
+
+                    />
+                <EditText
+                    android:id="@+id/febcomplaint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/febgovernment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/febcourt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/febtotal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/mar"
+
+                    />
+                <EditText
+                    android:id="@+id/marcomplaint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/margovernment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/marcourt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/martotal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/apr"
+                    />
+
+                <EditText
+                    android:id="@+id/aprcomplaint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/aprgovernment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/aprcourt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/aprtotal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/may"
+                    />
+
+                <EditText
+                    android:id="@+id/maycomplaint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/maygovernment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+
+                <EditText
+                    android:id="@+id/maycourt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/maytotal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/jun"
+                    />
+
+                <EditText
+                    android:id="@+id/juncomplaint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/jungovernment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/juncourt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/juntotal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/jul"
+
+                    />
+
+                <EditText
+                    android:id="@+id/julcomplaint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/julgovernment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/julcourt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/jultotal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/aug"
+
+                    />
+
+                <EditText
+                    android:id="@+id/augcomplaint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/auggovernment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/augcourt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/augtotal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/sep"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/sepcomplaint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/sepgovernment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/sepcourt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/septotal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/oct"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/octcomplaint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/octgovernment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/octcourt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/octtotal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/nov"
+
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/novcomplaint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/novgovernment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/novcourt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/novtotal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/dec"
+                    />
+
+                <EditText
+                    android:id="@+id/deccomplaint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/decgovernment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/deccourt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/dectotal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/subtotal"
+
+                    />
+
+                <EditText
+                    android:id="@+id/subcomplaint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+                <EditText
+                    android:id="@+id/subgovernment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/subcourt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/subtotal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"
+                    android:text="@string/grandtotal"
+                    android:layout_marginBottom="@dimen/border"
+
+                    />
+
+
+                <EditText
+                    android:id="@+id/grandcomplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_marginBottom="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+                <EditText
+                    android:id="@+id/grandgovernment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_marginBottom="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/grandcourt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_marginBottom="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+
+                <EditText
+                    android:id="@+id/grandtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:inputType="none"                    android:textColorHint="#ffc6c6c6"
+                    android:textSize="18dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/border"
+                    android:layout_marginTop="@dimen/border"
+                    android:layout_marginRight="@dimen/border"
+                    android:layout_marginBottom="@dimen/border"
+                    android:padding="1dp"
+                    android:background="#fff"/>
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

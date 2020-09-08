@@ -1,9 +1,221 @@
 <resources>
-    <string name="app_name">Smart DMS</string>
+    <string name="app_name">GRM6</string>
     <string name="select">Select</string>
     <string name="enter">Enter</string>
     <string name="selectable">selectable</string>
     <string name="multiSselectable">multi selectable</string>
     <string name="date">date</string>
+    <string name="text_khmer" translatable="false">ភាសាខ្មែរ</string>
+    <string name="text_english" translatable="false">English</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="mobileNumber" translatable="false">Mobile Number</string>
+    <string name="agreement">Signature\n(sign using finger on screen).</string>
+    <string name="clear_pad">Clear Pad</string>
+    <string name="save_signature">Save Signature</string>
+
+    <string name="grf">GRM4</string>
+    <string name="affectedPerson">Staff Registration</string>
+    <string name="login">Login</string>
+    <string name="oneTouch">One Touch SignIn</string>
+    <string name="or">or</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="forgotPassword">Forgot Password</string>
+
+    <string name="saluation">Salutation</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="sof">Son of</string>
+    <string name="wof">Wife of</string>
+
+    <string name="dof">Daughter of</string>
+    <string name="mof">Wife of</string>
+    <string name="parentName">Add Father/Mother/Husband Name</string>
+    <string name="position">GRC Designation</string>
+    <string name="doorNumber">House Number /Door Number / Landmark / Street Name</string>
+    <string name="province">Province</string>
+    <string name="district">District</string>
+    <string name="commune">Commune</string>
+    <string name="village">Village</string>
+    <string name="gmail">Gmail/Email</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="submit">SUBMIT</string>
+
+    <string name="datekh">Date</string>
+    <string name="office">Office</string>
+    <string name="grmlevel">GRM Level</string>
+    <string name="projectName">Project</string>
+    <string name="status">Status</string>
+    <string name="submitted">Submitted</string>
+    <string name="view">Timeline</string>
+    <string name="edit">Edit</string>
+    <string name="print">Print</string>
+    <string name="feedback">Feedback</string>
+
+    <string name="viewform">View Form</string>
+    <string name="complaintletter">Complaint Letter</string>
+    <string name="newcomplaint">New Complaint</string>
+    <string name="sampleLetter">SAMPLE COMPLAINT LETTER</string>
+    <string name="toaddress">To Address</string>
+    <string name="dearsir">Dear Sir</string>
+    <string name="signed">We, who have signed this letter, are residents of </string>
+    <string name="mailhint">Hint: (Mailing Address Of Complaints)</string>
+    <string name="addMailingaddress">Add Mailing Address</string>
+    <string name="compliantDetail">Add compliant Detail</string>
+    <string name="compliantRegarding">and would like to file a complaint regarding the</string>
+    <string name="projecthint">Hint: (Name of Project)</string>
+    <string name="adbproject">an ADB-assisted Project. </string>
+    <string name="duethis">We believe that due to this Project,</string>
+    <string name="keptConfidential">Please keep identities confidential</string>
+    <string name="representative">Complainant\'s representative</string>
+    <string name="addRep">Add representative</string>
+    <string name="contactDetail">Please see below our other contact details</string>
+    <string name="email">Email</string>
+    <string name="telephone">Telephone</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="sincerely">Sincerely,</string>
+
+    <string name="useRegister">Use Register as Compliant</string>
+    <string name="sno">S. No.</string>
+
+    <string name="attach">Attach Compliant Details</string>
+    <string name="mateialhint">Hint: (LIST DOWN ALLEGED DIRECT AND MATERIAL EFFECT OF PROJECT TO COMPLAINANTS)</string>
+    <string name="geotag">Geotag</string>
+    <string name="description">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="relationName">Name of Relation</string>
+    <string name="personName">Name of Person</string>
+
+    <string name="signature">Signature</string>
+
+    <string name="account">Accountability Mechanism</string>
+    <string name="compliantForm">Complaint Form</string>
+    <string name="choicefunction">Choice of function</string>
+    <string name="problemSolving">Problem solving or compliance review\n (Choose one below)</string>
+    <string name="facilitator">Special project facilitator</string>
+    <string name="assists">for problem solving (Assists people who are directly and materially harmed by specific problems caused, or is likely to be caused, by ADB-assisted projects through informal, flexible, and consensus-based methods with the consent and participation of all parties concerned)</string>
+    <string name="reviewpanel">Compliance Review panel</string>
+    <string name="review">for compliance review (Investigates alleged noncompliance by ADB with its operational policies and procedures in any ADB-assisted project in the course of the formulation, processing, or implementation of the project that directly, materially, and adversely affects, or is likely to affect, local people, as well as monitors the implementation of remedial action relates to the harm or likely harm caused by noncompliance)</string>
+    <string name="confidentiality">Confidentiality</string>
+    <string name="compliants">Complainants</string>
+    <string name="anonymoushint">Hint: (Anonymous complaints will not be accepted. There must be at least two project-affected complainants.)</string>
+    <string name="authorized">Authorized representative or assistant (if any).</string>
+    <string name="information">Hint: (Information regarding the representatives, or persons assisting complainants in filing the complaint, will be disclosed, except when they are also complainants and they request confidentiality.)</string>
+    <string name="project">Project</string>
+    <string name="brief">Brief description</string>
+    <string name="direct">What direct and material harm has the ADB-assisted project caused, or will likely cause, to the complainants? </string>
+    <string name="efforts">Have the complainants made prior efforts to solve the problem(s) and issue(s) with the ADB operations department including Resident Mission concerned?</string>
+    <string name="provide">Hint: If YES, please provide the following: when, how, by whom, and with whom the efforts were made. Please describe any response the complainants may have received from or any actions taken by ADB.</string>
+    <string name="optionalInfo">Optional Information</string>
+    <string name="desiredRemedy">What is the complainants’ desired outcome or remedy for the complaint?</string>
+    <string name="anythingAdd">Anything else you would like to add?</string>
+    <string name="perNameComplete">Name of the person who completed this form</string>
+
+    <string name="adbcompliant">ADB Compliant</string>
+    <string name="level">First Level</string>
+    <string name="cambodia">Cambodia</string>
+    <string name="compliantAddress">Compliant Address</string>
+    <string name="help">Help</string>
+    <string name="timeline">Timeline</string>
+
+    <string name="clientAddress">Client address</string>
+    <string name="drivername">Driver Name</string>
+    <string name="clientName">Client Name</string>
+
+    <string name="staffreg">Staff Registration</string>
+    <string name="compReg">Compliant Registration</string>
+    <string name="complist">Compliants</string>
+    <string name="comprecipt">Compliant Receipt</string>
+
+    <string name="projectDetails">Project details</string>
+    <string name="imagename">Image name</string>
+
+    <string name="mr">Mr</string>
+    <string name="ms">Ms</string>
+    <string name="mrs">Mrs</string>
+    <string name="dr">Dr</string>
+    <string name="selectkh">Select</string>
+    <string name="locationPermissionAlert">Please Enable this permission to identify  your breeds on the google map by other farmers</string>
+
+    <string name="grmlogbook">GRIEVANCE REGISTRATION LOGBOOK</string>
+    <string name="focalLocation">Grievance Focal Location</string>
+    <string name="focalPerson">Grievance Focal Person</string>
+    <string name="grievanceNumber">Grievance No \n Date</string>
+    <string name="apDetail">Affected Person Details</string>
+    <string name="address">Address</string>
+    <string name="type">Type (A, B,C) &amp; Nature of Grievance (SOC or ENV)</string>
+    <string name="grievanceNature">Nature of Grievance (SOC or ENV)</string>
+    <string name="locationImpact">Location of impact (village name, KM Chainage)</string>
+    <string name="grievanceSummary">Grievance  Summary</string>
+    <string name="dpSignature">DP’s Signature</string>
+    <string name="photo">Photos / Videos</string>
+
+    <string name="protocol">GRC MEETING PROTOCOL FORM</string>
+    <string name="meeting">GRC MEETING</string>
+    <string name="venue">Venue</string>
+    <string name="agenda">Agenda</string>
+    <string name="summaryDiscussion">Summary of discussions :</string>
+    <string name="discussionOne">Discussions 1 :</string>
+    <string name="discussionTwo">Discussions 2 :</string>
+    <string name="discussionThree">Discussions 3 :</string>
+    <string name="discussionFour">Discussions 4 :</string>
+    <string name="discussionFive">Discussions 5 :</string>
+    <string name="number">Number</string>
+    <string name="discussionSubject">Agenda / Subject of discussion</string>
+    <string name="compliantName">Complainant Name</string>
+    <string name="location">Location​ (address)</string>
+    <string name="phone">Phone</string>
+    <string name="content">Content / Comments</string>
+    <string name="proposals">Proposals for resolution</string>
+    <string name="annex">SNAG LIST</string>
+    <string name="hintannex">Record of issues which are not grievances (as yet) such as community request for some improvements, request for temporary access to the field, request for information etc.</string>
+    <string name="snaglist">SNAG LIST  as of  (Date)</string>
+    <string name="personhandlingOne">Person/s handling the issue :</string>
+    <string name="personhandlingTwo">Person/s handling the issue 2 :</string>
+    <string name="personhandlingThree">Person/s handling the issue 3 :</string>
+    <string name="personhandlingFour">Person/s handling the issue 4 :</string>
+    <string name="personhandlingFive">Person/s handling the issue 5 :</string>
+    <string name="personhandlingSix">Person/s handling the issue 6 :</string>
+    <string name="personhandlingSeven">Person/s handling the issue 7 :</string>
+    <string name="vildpname">Village /Dp name</string>
+    <string name="chainge">Km/Chainage</string>
+    <string name="snagDescription">Snag description</string>
+    <string name="remarks">Remarks</string>
+
+    <string name="summary">PROJECTS GRIEVANCES SUMMARY</string>
+    <string name="monthkh">Month</string>
+    <string name="themeOne">Theme 1</string>
+    <string name="themeTwo">Theme 2</string>
+    <string name="themeThree">Theme 3</string>
+    <string name="reporting"># new complaints registered for reporting month</string>
+    <string name="solved"># complaints resolved locally by GRG/PIU/ Conl/ local gov/etc.</string>
+    <string name="complaintSubmit"># complaints submitted to court/ ADB AM/ bypassing project level GRM</string>
+    <string name="total">Total number of complaints registered in all Grievance Logs</string>
+    <string name="jan">Jan</string>
+    <string name="feb">Feb</string>
+    <string name="mar">Mar</string>
+    <string name="apr">Apr</string>
+    <string name="may">May</string>
+    <string name="jun">Jun</string>
+    <string name="jul">Jul</string>
+    <string name="aug">Aug</string>
+    <string name="sep">Sep</string>
+    <string name="oct">Oct</string>
+    <string name="nov">Nov</string>
+    <string name="dec">Dec</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="grandtotal">Grand Totals</string>
+
+    <string name="receipt">COMPLAINT RECEIPT CONFIRMATION NOTICE</string>
+
+    <string name="fromaddress">From Address</string>
+    <string name="subject">Subject : Complaint Receipt Confirmation Notice</string>
+    <string name="dpname">Dear</string>
+    <string name="confirm">This is to confirm that your complaint has been received by the Grievance Redress Group and was registered at the logbook under</string>
+    <string name="nature">The nature of the complaint is the following</string>
+    <string name="grg">The Grievance Redress Group shall review and address your complaint within fifteen (15) days upon the date of the receipt of the complaint.  Please note that we will be conducting GRG meetings to review your complaint and your participation during these meetings will be required.  The Local Focal Person </string>
+    <string name="detail">shall contact you with further details</string>
 
 </resources>

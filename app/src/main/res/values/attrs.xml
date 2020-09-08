@@ -6,4 +6,5 @@
         <attr name="choices" format="string"/>
         <attr name="tittle" format="string"/>
     </declare-styleable>
+    <attr name="CustomChipChoiceStyle" format="reference"/>
 </resources>

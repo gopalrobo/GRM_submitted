@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentLinear"
+    android:background="#fff"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardElevation="5dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+                        android:text="Date"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@color/secondaryTextColor" />
+
+                    <TextView
+                        android:id="@+id/snagdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:ellipsize="end"
+                        android:text=""
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@color/primaryTextColor" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+                        android:text="Village /AP Name"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@color/secondaryTextColor" />
+
+                    <TextView
+                        android:id="@+id/snagvillage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:ellipsize="end"
+                        android:text=""
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@color/primaryTextColor" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+                        android:text="Geotags"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@color/secondaryTextColor" />
+
+                    <TextView
+                        android:id="@+id/snaglocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:ellipsize="end"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@color/primaryTextColor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+                        android:text="Snag Description"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@color/secondaryTextColor" />
+
+                    <TextView
+                        android:id="@+id/snagsummary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:ellipsize="end"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@color/primaryTextColor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+                        android:text="Snag Resolution"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@color/secondaryTextColor" />
+
+                    <EditText
+                        android:id="@+id/snagResolution"
+                        android:layout_width="320dp"
+                        android:layout_height="100dp"
+                        android:backgroundTint="@color/gray"
+                        android:inputType="textMultiLine"
+                        android:layout_gravity="top"
+                        android:minHeight="100dp"
+                        android:layout_weight="0.5"
+                        android:textColorHint="#ffc6c6c6"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+                        android:text="Snag Decision"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@color/secondaryTextColor" />
+
+                    <EditText
+                        android:id="@+id/snagDecision"
+                        android:layout_width="320dp"
+                        android:layout_height="100dp"
+                        android:backgroundTint="@color/gray"
+                        android:inputType="textMultiLine"
+                        android:layout_gravity="top"
+                        android:minHeight="100dp"
+                        android:layout_weight="0.5"
+                        android:textColorHint="#ffc6c6c6"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150dp"
+                        android:layout_height="220dp"
+                        android:background="#fff"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardElevation="5dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/complaintImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/test"
+                            android:scaleType="centerCrop" />
+
+                        <LinearLayout
+                            android:id="@+id/complaintLocation"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="5dp">
+
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:background="@drawable/cricle_trans"
+                                android:src="@drawable/outline_location_on_white_24dp"
+                                android:scaleType="centerCrop" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/complaintgeo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Geo Details"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:layout_gravity="bottom"
+                                android:fontFamily="@font/sans_bold"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="5dp" />
+
+                            <TextView
+                                android:id="@+id/complaintDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Description Details"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/sans_bold"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="5dp" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="150dp"
+                        android:layout_height="220dp"
+                        android:background="#fff"
+                        android:id="@+id/investImgCard"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardElevation="5dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="5dp"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/itemsImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/test"
+                            android:scaleType="centerCrop" />
+
+                        <LinearLayout
+                            android:id="@+id/itemsLocation"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_margin="5dp">
+
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:background="@drawable/cricle_trans"
+                                android:src="@drawable/outline_location_on_white_24dp"
+                                android:scaleType="centerCrop" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/geodetails"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Geo Details"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:layout_gravity="bottom"
+                                android:fontFamily="@font/sans_bold"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="5dp" />
+
+                            <TextView
+                                android:id="@+id/description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Description Details"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/sans_bold"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginRight="5dp" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
